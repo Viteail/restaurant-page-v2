@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Italic;
+  src: url('../fonts/Magenta\ Rose.ttf');
+}
+
+html {
+  height: 100%;
+}
+
+:root {
+  --orange-400: #fb923c;
+  --orange-600: #ea580c;
+  --black: #000;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--orange-400);
+  box-shadow: 0px 2px 3px var(--orange-600);
+}
+
+.title-container {
+  font-family: Italic;
+  font-size: 2rem;
+}
+
+.home-btn,
+.menu-btn,
+.contact-btn {
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 8px;
+  width: 100px;
+  background: none;
+  border: none;
+  transition: 200ms;
+}
+
+.home-btn:hover,
+.menu-btn:hover,
+.contact-btn:hover {
+  transform: scale(1.1);
+  transform: translateY(-5px);
+}
+
+.active:hover {
+  transform: scale(1.1);
+}
+
+.active {
+  transform: scale(1.1);
+  border-bottom: 1px solid var(--black);
+}
