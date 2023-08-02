@@ -21,6 +21,7 @@ html {
 :root {
   --orange-400: #fb923c;
   --orange-600: #ea580c;
+  --amber-400: #fbbf24;
   --slate-900: #0f172a;
   --slate-300: #cbd5e1;
   --rgba-slate-900: rgba(15, 23, 42, 0.95);
@@ -87,7 +88,7 @@ button {
   border-bottom: 1px solid var(--black);
 }
 
-.home {
+.page {
   display: flex;
   justify-content: center;
   flex: 1;
@@ -97,14 +98,14 @@ button {
   background-size: cover;
 }
 
-.home-wrapper {
+.page-wrapper {
   flex: 1;
   padding: 20px;
   max-width: 1000px;
   background: var(--rgba-slate-900);
 }
 
-.home-content {
+.page-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -133,10 +134,37 @@ button {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 1px solid var(--black);
 }
 
 .subtext-container {
   font-family: Italic;
   text-align: center;
+}
+
+.menu-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.img-container > .food-img {
+  width: 466px;
+  height: 264px;
+  border-bottom: 2px solid var(--amber-400);
+}
+
+.food-name {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card {
+  cursor: pointer;
+  border: 2px solid var(--amber-400);
+  transition: 200ms;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }

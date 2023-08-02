@@ -1,25 +1,8 @@
-export const createHomePage = (content) => {
-  const homePage = document.createElement('div');
-  homePage.classList.add('home');
-  content.appendChild(homePage);
-  homePage.appendChild(createHomeWrapper());
-};
-
-const createHomeWrapper = () => {
-  const homeWrapper = document.createElement('div');
-  homeWrapper.classList.add('home-wrapper');
-  homeWrapper.appendChild(createHomeContent());
-  return homeWrapper;
-};
-
-const createHomeContent = () => {
-  const homeContent = document.createElement('div');
-  homeContent.classList.add('home-content');
-  homeContent.appendChild(createWelcomeContainer());
-  homeContent.appendChild(createDescription());
-  homeContent.appendChild(createImageWrapper());
-  homeContent.appendChild(createSubtext());
-  return homeContent;
+export const createHomePage = (pageContent) => {
+  pageContent.appendChild(createWelcomeContainer());
+  pageContent.appendChild(createDescription());
+  pageContent.appendChild(createImageWrapper());
+  pageContent.appendChild(createSubtext());
 };
 
 const createWelcomeContainer = () => {
