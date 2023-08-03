@@ -1,3 +1,5 @@
+import { buttons } from '..';
+
 export const createHeader = (content) => {
   const header = document.createElement('div');
   header.classList.add('header');
@@ -24,8 +26,9 @@ const createNavWrapper = () => {
 
 const createHomeButton = () => {
   const homeBtn = document.createElement('button');
-  homeBtn.classList.add('home-btn', 'active'); //for now
+  homeBtn.classList.add('home-btn', 'active');
   homeBtn.textContent = 'Home';
+  buttons.push(homeBtn);
   return homeBtn;
 };
 
@@ -33,6 +36,7 @@ const createMenuButton = () => {
   const menuBtn = document.createElement('button');
   menuBtn.classList.add('menu-btn');
   menuBtn.textContent = 'Menu';
+  buttons.push(menuBtn);
   return menuBtn;
 };
 
@@ -40,5 +44,6 @@ const createContactButton = () => {
   const contactBtn = document.createElement('button');
   contactBtn.classList.add('contact-btn');
   contactBtn.textContent = 'Contact';
+  buttons.push(contactBtn);
   return contactBtn;
 };
