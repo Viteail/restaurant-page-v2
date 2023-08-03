@@ -168,3 +168,29 @@ button {
 .card:hover {
   transform: scale(1.05);
 }
+
+.contact-text {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.phone-icon {
+  width: 30px;
+}
+
+.phone-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.location-text {
+  font-size: 2rem;
+}
+
+.location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
